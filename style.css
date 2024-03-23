@@ -1,0 +1,289 @@
+
+
+/* Default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/night_view.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity here */
+    z-index: 0;
+}
+
+    header {
+        background-color: #A4CE95;
+        color: #fff;
+        padding: 1rem;
+    }
+    .header-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 960px; /* Adjust the max width of the header */
+        margin: -8px -9px; /* Center the header horizontally */
+    }
+    .logo {
+        flex: 0 0 auto; /* Let the logo grow and shrink as needed */
+    }
+
+.logo img {
+    height: 100px;
+    width: 86px;
+    margin-right: 20px;
+    /* width: 164px;
+    margin-right: 0px; */
+}
+
+.cafe-name {
+    margin-left: 5px;  /* Remove default margin */
+}
+
+.cafe-name h1 {
+    font-size: 24px; /* Adjust font size for the cafe name */
+    font-family: 'Roboto Slab', serif; /* Use Roboto Slab font */
+    margin: 0;
+    color: black; /* Remove default margin */
+}
+
+#home {
+    height: 100vh; /* Set the height of the home section to 100% of the viewport height */
+    background-image: url('./images/home-background.jpg'); /* Background image for the home section */
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Use flexbox for centering content vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-family: cursive;
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.hero:hover {
+    color:rgb(111, 240, 150) ; /* Change color on hover */
+}
+
+.opening-greeting {
+    font-size: 3rem; /* Increase font size for the opening greeting */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+.opening-details {
+    font-size: 1.5rem; /* Font size for the opening details */
+    opacity: 0.8; /* Reduce opacity for a subtle effect */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Change to gold on hover */
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    color: #666;
+}
+.menu-item h3 {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-size: 20px; /* Adjust font size as needed */
+    color: #333; /* Set font color */
+    margin-bottom: 10px; /* Add spacing between heading and paragraph */
+}
+
+.menu-item p {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-size: 15px; /* Adjust font size as needed */
+    color: #666; /* Set font color */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: calc(25% - 10px); /* Adjust the width of each item based on your design */
+    margin: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Add a hover effect to scale the image */
+}
+#about {
+    background-color: #A4CE95;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#about h2 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+/* Media queries for responsive design */
+
+/* Tablet view */
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-item {
+        width: 250px;
+    }
+    .gallery-item {
+        width: 250px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .hero {
+        padding: 1rem;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+    .gallery-item {
+        width: 100%;
+    }
+}
